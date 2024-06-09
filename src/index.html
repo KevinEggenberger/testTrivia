@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="question-section">
+      <button class="button" onclick="getTriviaQuestion()">Get Trivia Question</button>
+    </div>
+    <div class="question-container" id="question-container" style="display: none;">
+      <p id="trivia-question"></p>
+    </div>
+    <div class="answer-section" id="answer-container" style="display: none;">
+      <input type="text" id="answer-input" placeholder="Enter your answer here">
+      <button class="button" onclick="submitAnswer()">Submit Answer</button>
+    </div>
+    <div class="result-section">
+      <p id="evaluation-result"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
