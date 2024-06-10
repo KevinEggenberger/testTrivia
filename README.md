@@ -24,3 +24,6 @@ To verify if these tools are installed, run the following commands in your termi
 git --version
 node -v
 npm -v
+
+npm install express body-parser dotenv openai@^4.0.0
+
