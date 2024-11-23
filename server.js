@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.get('/trivia', async (req, res) => {
   try {
     const response = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4o-mini",
       messages: [{ role: "user", content: "Give me a random trivia question." }],
       max_tokens: 100,
       temperature: 0.7,
